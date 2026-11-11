@@ -1,0 +1,8 @@
+requests>=2.32,<3
+ruff>=0.9,<1
+mypy>=1.15,<2
+PyYAML>=6,<7
+tinycss2>=1.4,<2
+sqlglot>=26,<30
+html5lib>=1.1,<2
+tomli>=2,<3; python_version < "3.11"

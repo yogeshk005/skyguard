@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "skyguard-agent"
+version = "0.1.0"
+dependencies = ["requests>=2.32,<3", "ruff>=0.9,<1", "mypy>=1.15,<2", "PyYAML>=6,<7", "tinycss2>=1.4,<2", "sqlglot>=26,<30", "html5lib>=1.1,<2", "tomli>=2,<3; python_version < '3.11'"]
+[tool.setuptools.package-data]
+skyguard_agent = ["*.cjs"]
+[project.scripts]
+skyguard = "skyguard_agent.cli:main"
